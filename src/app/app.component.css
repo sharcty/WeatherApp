@@ -1,0 +1,67 @@
+#container {
+  display: grid;
+  grid-template-columns: repeat(16, 1fr);
+  grid-template-rows: repeat(16, 1fr);
+  grid-column-gap: 8px;
+  grid-row-gap: 8px;
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+}
+
+#addedCities {
+  grid-area: 3 / 11 / 12 / 16;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  row-gap: 4vw;
+}
+
+#search {
+  grid-area: 2 / 1 / 2 / 11;
+  place-self: center;
+}
+
+#forecast {
+  grid-area: 9 / 2 / 16 / 10;
+  column-gap: 4vw;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+#chosenCity {
+  grid-area: 2 / 1 / 10 / 11;
+  place-self: center;
+  mix-blend-mode: overlay;
+  .city{
+  font-weight: bolder;
+  }
+}
+
+.cityCard{
+  display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1vw;
+}
+
+.temperatureCard{
+  display: flex
+;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vh;
+}
+
+.temperature{
+  text-align: center;
+}
+
+.state{
+    font-size: 1rem;
+}
+
+.generalInfo{
+  justify-items: center;
+}

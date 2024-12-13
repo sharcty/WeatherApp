@@ -1,1 +1,163 @@
-/* You can add global styles to this file, and also import other style files */
+/*
+  Josh's Custom CSS Reset
+  https://www.joshwcomeau.com/css/custom-css-reset/
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+
+p {
+  text-wrap: pretty;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  text-wrap: balance;
+}
+
+#root,
+#__next {
+  isolation: isolate;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital@0;1&family=Poppins:wght@500;&display=swap');
+
+.mulish-regular {
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.poppins-medium {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.glass {
+  background: rgba(199, 194, 194, 0.21);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8.9px);
+  -webkit-backdrop-filter: blur(8.9px);
+  border: 1px solid rgba(199, 194, 194, 0.21);
+}
+
+.title{
+  font-size: 4rem;
+}
+
+.desc{
+  font-size: 1rem;
+}
+
+.label{
+  font-size: 1.5rem;
+}
+
+#search{
+  background: rgba(199, 194, 194, 0.21);
+  border-radius: 30px;
+  padding: 10px 20px;
+  cursor: pointer;
+box-shadow:  4px 4px 6px 0 rgba(255,255,255,.3),
+            -4px -4px 6px 0 rgba(116, 125, 136, .2);
+}
+
+#search .search-input{
+  background: transparent;
+  border: none;
+  outline:none;
+  width: 400px;
+}
+
+#search .search-btn .fas{
+  color: rgb(199, 194, 194)
+}
+
+.brokenClouds{
+  background-image: url(./assets/brokenClouds.jpg);
+}
+
+
+.clearSky{
+  background-image: url(./assets/clearSky.jpg);
+}
+
+
+.fewClouds{
+  background-image: url(./assets/fewClouds.jpg);
+}
+
+
+.mist{
+  background-image: url(./assets/mist.jpg);
+}
+
+
+.rain{
+  background-image: url(./assets/rain.jpg);
+}
+
+
+.scatteredClouds{
+  background-image: url(./assets/scatteredClouds.jpg);
+}
+
+
+.showerRain{
+  background-image: url(./assets/showerRain.jpg);
+}
+
+
+.snow{
+  background-image: url(./assets/snow.jpg);
+}
+
+
+.thunderstorm{
+  background-image: url(/assets/thunderstorm.jpg);
+}
